@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    width: 95%;
+    background-color: #071f1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 65px;
+}
+header .logo{
+    width: 105px;
+}
+header .logo img{
+    width: 100%;
+}
+.header_right{
+    display: flex;
+    align-content: center;
+} 
+.header_right .language{
+ display: flex;
+ align-items: center;
+ margin-right: 25px;
+ font-size: 15px;
+}
+.header_right .language i{
+    color: aliceblue;
+}
+.header_right .language span{
+    color: aliceblue;
+    padding-left: 8px;
+}
+.header_right .language i{
+    color: aliceblue;
+    font-size: 16px;
+}
+.header_right a{
+    color: aliceblue;
+}
+.banner{
+    width: 100%;
+    height: 70vh;
+    /* imp point is that if u have full image but u want only half then use line-gradient then u can adject as per that*/
+    background-image:linear-gradient(to right, black 40%, transparent 58%),url(img/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.banner .banner_txt{
+    width: 44%;
+    color: aliceblue;
+    padding-left: 80px;
+    padding-top: 45px;
+}
+.banner .banner_txt h2{
+    font-size: 40px;
+    /*padding-bottom: 15px;*/
+    margin-top: 0em;
+}
+
+.banner .banner_txt p{
+    font-size: 20px;
+    color: #e6e3e3;
+   /* padding-bottom: 49px;*/
+    margin-top: 0em;
+
+}
+
+.banner .banner_txt button{
+    background-color:#0F79Af;
+    display: block;
+    color: aliceblue;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 17px;
+    width: 56%;
+    cursor: pointer;
+}
+.banner .banner_txt .or{
+    display: block;
+    position:relative;
+    width: 54%;
+    text-align: center;
+    color: #d6d2d2;
+    margin: 15px 0;
+
+}
+/* the stuff is texted to draw half line*/
+.banner .banner_txt .or::before{
+    content:" ";
+    display:block;
+    position:absolute;
+    width: 45%;
+    height:1px;
+    background-color: #ffff;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* for another side just change the left option to right option that its*/
+.banner .banner_txt .or::after{
+    content:" ";
+    display:block;
+    position:absolute;
+    width: 45%;
+    height:1px;
+    background-color: #ffff;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.banner .banner_txt .membership{
+    margin-top: 40px;
+    display: block;
+}
+.facility{
+    display: flex;
+    align-items: center;
+    padding: 15px 100px ;
+}
+.facility .iteams{
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    
+}
+.facility .iteams .img{
+    width: 100%;
+}
+.facility .iteams .img img{
+    width: 100%;
+}
+.facility .items h3{
+    font-size: 32px;
+    color: #333;
+}
+.facility .iteams p{
+    color: #333;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: lighter;
+}
+footer{
+    width: 100%;
+    background-color: #222222;
+    padding: 25px 0;
+}
+.footer{
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+.footer a{
+    color: #0F79Af;
+    font-size: 14px;
+    padding: 0 6px;
+}
+.footer small{
+    display: block;
+    color: gray;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
